@@ -258,9 +258,11 @@ Domain-specific encoder models for legal text similarity, classification, and re
 - [Pasal MCP](https://github.com/ilhamfp/pasal) - **[🇮🇩 Indonesia]** MCP + REST + web app giving AI grounded access to 40k+ Indonesian regulations.
 - [auslaw-mcp](https://github.com/russellbrenner/auslaw-mcp) - **[🇦🇺 🇳🇿 AU/NZ]** MCP server searching AustLII case law and legislation with OCR for scanned PDFs.
 - [law-scrapper-mcp](https://github.com/numikel/law-scrapper-mcp) - **[🇵🇱 Poland]** MCP server for Polish legal acts via the Sejm API.
+- [SAOS MCP](https://github.com/matematicsolutions/mcp-saos) - **[🇵🇱 Poland]** MCP server for Polish common and Supreme Court case law via the SAOS API, returning verifiable citations. Part of a [40+ connector fleet](https://github.com/matematicsolutions) covering Polish administrative courts (NSA/CBOSA), public-procurement rulings (KIO), the company register (KRS), and tax interpretations (EUREKA). MIT.
 - [Emilie](https://github.com/veronica-builds/emilie) - **[🇨🇭 Switzerland]** Swiss sovereign legal AI; Mike fork extended with MCP client and local Apertus model support.
 - [Mahender22/legal-mcp](https://github.com/Mahender22/legal-mcp) - **[🇺🇸 US]** 18 MCP tools across CourtListener case law (4M+ opinions, 400+ US courts), PACER federal filings, and Clio practice-management.
 - [EU Compliance MCP](https://github.com/Ansvar-Systems/EU_compliance_MCP) - **[🇪🇺 EU]** MCP exposing 61 EU regulations (GDPR, AI Act, DORA, NIS2, MiFID II, eIDAS 2.0, CRA) with 4,095 articles and cross-regulation comparison.
+- [EUR-Lex SPARQL MCP](https://github.com/matematicsolutions/mcp-eu-sparql) - **[🇪🇺 EU]** MCP server querying the EU Publications Office SPARQL endpoint (EUR-Lex / Cellar) live: EU legislation plus 57k+ CJEU rulings, with CELEX and ECLI identifiers on every citation. MIT.
 - [CSOAI Legacy Bridges](https://github.com/CSOAI-ORG/cobol-bridge-mcp) - **[🇪🇺 EU]** **[Open Source]** Governed-MCP bridges that parse legacy-system payloads (COBOL, ISO-20022, HL7, SAP, SCADA) and check each action against EU AI Act, DORA, NIS2 and HIPAA, emitting an Ed25519-signed, offline-verifiable NIST OSCAL audit package (Article-12 evidence). 22 bridges plus a signed Layer-0 package validated under compliance-trestle.
 - [mcp-server-legifrance](https://github.com/pylegifrance/mcp-server-legifrance) - **[🇫🇷 France]** MCP that wraps the official Légifrance/PISTE API for searching French statutes, codes, and judicial jurisprudence.
 - [droit-francais-mcp](https://github.com/jmtanguy/droit-francais-mcp) - **[🇫🇷 France]** Unified MCP over Légifrance (legislation/codes/decrees) plus JudiLibre (case law) with PISTE-auth.
@@ -278,6 +280,7 @@ Domain-specific encoder models for legal text similarity, classification, and re
 [Agent skills](https://www.anthropic.com/news/skills) — portable instruction sets that load into AI coding agents (Claude Code, Cursor, Codex, and other agentic IDEs) to give them domain expertise for legal work.
 
 - [commercial-legal-pl](https://github.com/apiotrowski-afk/commercial-legal-pl) - **[🇵🇱 Poland]** Skill for drafting and reviewing Polish-law B2B, IP, and IT contracts; ships a clause library and doctrinal knowledge base, with consistency checks for § / ust. / pkt cross-references. Works with Claude Code, Cursor, Codex, and other agent IDEs. Apache 2.0.
+- [awesome-matematic-skills-pl](https://github.com/matematicsolutions/awesome-matematic-skills-pl) - **[🇵🇱 Poland]** 41 legal-AI skills in 8 Claude Code / Cowork bundles: LLM-output verification (citation grounding against SAOS/EUR-Lex sources), Polish and EU case-law research, DOCX redlining, and an AI Act audit bundle. MIT.
 
 ---
 
@@ -310,6 +313,7 @@ Comprehensive platforms that handle multiple functions across the legal workflow
 - [dd-agents](https://github.com/zoharbabin/due-diligence-agents) - **[Open Source]** M&A due diligence platform orchestrating 13 AI agents (Legal, Finance, Commercial, ProductTech, Cybersecurity, HR, Tax, Regulatory, ESG + Judge, Red Flag Scanner, Executive Synthesis, Acquirer Intelligence) across a 38-step pipeline. Interactive chat mode with 14 MCP tools for citation verification, cross-contract search, and document generation. Neurosymbolic cross-domain analysis routes findings between domains via deterministic rules. Apache 2.0, `pip install dd-agents`.
 - [doc.haus](https://github.com/sure-scale/doc-haus) - **[Open Source]** Self-hostable legal AI agent built as a fork of [OpenCode](https://github.com/anomalyco/opencode); documents stay on the user's machine, with matter-scoped private workspaces, cited document Q&A, and tracked-change DOCX redlines that open in Word.
 - [Legal Document Chat](https://github.com/janderswag/legal-document-chat) - **[Open Source]** Self-hosted document chat for attorneys that parses legal PDFs and answers questions using local open-source LLMs (Ollama), with page- and span-level citations mechanically verified against the source; runs fully offline (loopback-only, no cloud calls) on FastAPI + LanceDB (MIT).
+- [Patron](https://github.com/matematicsolutions/patron) - **[🇵🇱 Poland]** **[Open Source]** Self-hosted AI agent for law firms; hard fork of Mike extended with a hash-chained audit trail (EU AI Act art. 12 record-keeping), bring-your-own-model, 9 language editions, and MCP connectors for Polish and EU primary law. AGPL-3.0.
 
 ---
 
