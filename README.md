@@ -3,7 +3,7 @@
   <sup>Sponsored by</sup><br>
   <a href="https://vaquill.ai"><strong>Vaquill AI</strong></a>
   <br>
-  <sub>Legal AI for lawyers.</sub>
+  <sub>The most complete US primary law API.</sub>
 </div>
 
 ---
